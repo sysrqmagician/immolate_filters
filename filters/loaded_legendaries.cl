@@ -50,7 +50,7 @@ long filter(instance* inst) {
   item firstTag = next_tag(inst, 1);
   item secondTag = next_tag(inst, 1);
 
-  if (firstTag != Charm_Tag && secondTag != Charm_Tag) {
+  if (firstTag != Charm_Tag || secondTag != Charm_Tag) {
       return 0;
   }
 
